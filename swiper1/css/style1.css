@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+}
+
+/*
+ * 自定义样式 - 开始
+ */
+
+/*向后的箭头样式*/
+.swiper-button-next {
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 5%;
+    margin-left: -13.5px;
+    transform: rotateZ(90deg);
+}
+
+/*
+ * .s1 第一屏样式 - 开始
+ */
+
+.s1, .s2 {
+    background: url(../img/bj.png);
+    height: 100%;
+    /*设置当前的元素为相对定位*/
+    position: relative;
+}
+
+.s1 .header img {
+    /*设置绝对定位的位置*/
+    position: absolute;
+}
+
+.s1 .header img:nth-of-type(1) {
+    width: 30px;
+    top: 120px;
+    left: 50px;
+    animation: tada infinite;
+}
+
+.s1 .header img:nth-of-type(2) {
+    width: 60px;
+    right: 40px;
+    top: 90px;
+    animation: tada infinite;
+}
+
+.s1 .header img:nth-of-type(3) {
+    width: 50px;
+    left: 30px;
+    bottom: 180px;
+    animation: tada infinite;
+}
+
+.s1 .header img:nth-of-type(4) {
+    width: 50px;
+    right: 50px;
+    bottom: 200px;
+    animation: tada infinite;
+}
+
+.s1 .header img:nth-of-type(5) {
+    width: 70%;
+    left: 50%;
+    top: 25%;
+    margin-left: -35%;
+    animation:pulse infinite 1s;
+}
+
+/*第一屏的文字部分*/
+.s1 .main {
+    position: absolute;
+    top: 30%;
+}
+
+.s1 .main img:nth-of-type(1) {
+    width: 40%;
+}
+
+.s1 .main img:nth-of-type(2) {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.s1 .main p {
+    color: #fff;
+}
+
+.s1 .main .img9 {
+    background: url("../img/9.png");
+    width: 207px;
+    height: 24px;
+    background-size: contain;
+    margin: auto;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/*第一屏的底部*/
+.s1 .footer {
+    color: #00d7b2;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.s1 .footer p:nth-of-type(2) {
+    margin-bottom: 35px;
+}
+
+.s1 .footer p:nth-of-type(3) {
+    height: 70px;
+}
+
+.s1 .footer img {
+    position: absolute;
+    height: 70px;
+}
+
+.s1 .footer img:nth-of-type(1) {
+    left: 0;
+}
+
+.s1 .footer img:nth-of-type(2) {
+    left: -95px;
+}
+
+/*第二屏的样式*/
+.s2 {
+    color: #00f8ca;
+}
+
+.s2 h2 {
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+
+.s2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.s2 h2::before,
+.s2 h2::after {
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.s2 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+
+.s2 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
+}
+
+.s2 div {
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    height: 55%;
+    left: 50%;
+    margin-left: -40%;
+
+}
+
+.s2 div img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+
+.s2 div p {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+}
+
+.s2 div p:nth-of-type(1) {
+    padding-top: 20px;
+}
+
+.s2 div span {
+    /*渐变色*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+    width: 120px;
+    height: 25px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -60px;
+}
