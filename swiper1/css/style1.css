@@ -47,19 +47,16 @@ body {
 /*
  * .s1 第一屏样式 - 开始
  */
-
-.s1, .s2 {
+.s1, .s2 , .s3 {
     background: url(../img/bj.png);
     height: 100%;
     /*设置当前的元素为相对定位*/
     position: relative;
 }
-
 .s1 .header img {
     /*设置绝对定位的位置*/
     position: absolute;
 }
-
 .s1 .header img:nth-of-type(1) {
     width: 30px;
     top: 120px;
@@ -149,11 +146,32 @@ body {
 }
 
 .s1 .footer img:nth-of-type(1) {
-    left: 0;
+    animation: donghuakey 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:alternate;
 }
-
+@keyframes donghuakey
+{
+    from{
+       left:-100px;
+    }to{
+         left:100px;
+     }
+}
 .s1 .footer img:nth-of-type(2) {
-    left: -95px;
+    animation: donghuakey2 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:alternate;
+}
+@keyframes donghuakey2
+{
+    from{
+        left:100px
+    }to{
+         left:-100px;
+     }
 }
 
 /*第二屏的样式*/
@@ -246,4 +264,32 @@ body {
     bottom: -10px;
     left: 50%;
     margin-left: -60px;
+}
+#mp3Btn{
+    position: absolute;
+    right:5%;
+    top:5%;
+    z-index: 100;
+    width: 20px;
+    height: 30px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border:4px solid #292929;
+    text-align: center;
+    line-height: 28px;
+    transform: rotateZ(0deg);
+    animation: mp3key 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+@keyframes mp3key {
+    from{
+        transform: rotateZ(0deg);
+    }to{
+         transform: rotateZ(1turn);
+     }
+}
+#mp3Btn img{
+    width: 10px;
 }
