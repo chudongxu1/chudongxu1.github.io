@@ -293,3 +293,87 @@ body {
 #mp3Btn img{
     width: 10px;
 }
+.s3 {
+    color: #00f8ca;
+}
+
+.s3 h2 {
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+
+.s3 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.s3 h2::before,
+.s3 h2::after {
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.s3 h2::before {
+    background: url(../img/14.png);
+
+    margin-left: -95px;
+    margin-top: 10px;
+}
+
+.s3 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
+}
+.s3 p{
+    background:url(../img/15.png);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    text-align:center;
+    line-height:55px;
+    position: absolute;
+}
+.s3 p:nth-of-type(1){
+    top:204px;
+    left:90px;
+}
+.s3 p:nth-of-type(2){
+    top:204px;
+    left:228px;
+}
+.s3 p:nth-of-type(3){
+    top:324px;
+    left:298px;
+}
+.s3 p:nth-of-type(4){
+    top:446px;
+    left:227px;
+}
+.s3 p:nth-of-type(5){
+    top:440px;
+    left:89px;
+}
+.s3 p:nth-of-type(6){
+    top:325px;
+    left:20px;
+}
+.s3 h3{
+    background:url(../img/15.png);
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    text-align:center;
+    line-height:120px;
+    position: absolute;
+    top:300px;
+    left:129px;
+}
