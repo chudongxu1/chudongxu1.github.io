@@ -93,3 +93,42 @@ body {
     top:50%;
     left:8%;
 }
+/*.s2{*/
+    /*background:url(../img/timg.jpg);*/
+    /*background-size: 100% 100%;*/
+    /*position: relative;*/
+    /*height: 100%;*/
+/*}*/
+.s2 img:nth-of-type(1){
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left:0%;
+}
+.s2 img:nth-of-type(2){
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 39%;
+}
+.s2 img:nth-of-type(3){
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 36%;
+    left: 0%;
+}
+.s2 .wenzi{
+    font-size: 24px;
+    margin-left:70%;
+    padding-top:10%;
+}
+.s2 .wen{
+    width: 80%;
+    margin:0 auto;
+    text-align:left;
+    position: absolute;
+    top: 63%;
+    left:13%
+}
