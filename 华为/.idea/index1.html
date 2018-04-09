@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>下拉菜单</title>
+    <style type="text/css">
+        *{margin:0; padding:0}
+        #nav{width:200px; margin:50px}
+        #nav h3{ cursor:pointer; line-height:30px; height:30px; background-color:#000000; color:#fff}
+        #nav a{display:block; line-height:24px;color:#666666}
+        #nav a:hover{background-color:#eee; color:#000;}
+        #nav div{display:none; border:1px solid #000; border-top:none}
+    </style>
+    <script type="text/javascript">
+        function $(id){return document.getElementById(id)}
+        window.onload = function(){
+            $("nav").onclick = function(e){
+                var src = e?e.target:event.srcElement;
+                if(src.tagName == "H3"){
+                    var next = src.nextElementSibling || src.nextSibling;
+                    next.style.display = (next.style.display =="block")?"none":"block";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="nav">
+    <h3>管理区</h3>
+    <div>
+        <a href="#">建议</a>
+        <a href="#">链接</a>
+        <a href="#">联系</a>
+    </div>
+    <h3>交流区</h3>
+    <div>
+        <a href="#">JavaScript</a>
+        <a href="#">Delphi</a>
+        <a href="#">VC++</a>
+    </div>
+</div>
+</body>
+</html>
