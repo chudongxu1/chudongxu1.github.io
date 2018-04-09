@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #lun{
+            width: 730px;
+            height: 454px;
+            margin:0 auto;
+            margin-top: 20px;
+            position: relative;
+        }
+        #lun>ul>li{
+            display: none;
+        }
+        #lun ul .active{
+            display: block;
+        }
+        #lun #num_list{
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            opacity: 0.5;
+        }
+        #lun #num_list ul{
+            margin-left: 290px;
+        }
+        #lun #num_list li{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        #lun #num_list li span{
+            width: 20px;
+            height: 20px;
+            color:white;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 70%;
+            display: block;
+            background-color: #000000;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        #lun #num_list li .active-num{
+            background-color:#c81623;
+        }
+    </style>
+</head>
+<body>
+<div id="lun">
+<ul>
+    <li class="active" id="a">
+    <img src="未标题-1.jpg">
+    </li>
+    <li>
+        <img src="未标题2.jpg">
+    </li>
+    <li>
+        <img src="未标题-3.jpg">
+    </li>
+    <li>
+        <img src="未标题-4.jpg">
+    </li>
+    <li>
+        <img src="未标题-5.jpg">
+    </li>
+    <li>
+        <img src="未标题-6.jpg">
+    </li>
+</ul>
+    <div id="num_list">
+        <ul>
+            <li>
+                <span class="active-num">1</span>
+            </li>
+            <li>
+                <span num="1">2</span>
+            </li>
+            <li>
+                <span>3</span>
+            </li>
+            <li>
+                <span>4</span>
+            </li>
+            <li>
+                <span>5</span>
+            </li>
+            <li>
+                <span>6</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    var lis=document.getElementById("lun").firstElementChild.children;
+    var num_list=document.getElementById("num_list").firstElementChild.children;
+    var lun=document.getElementById("lun");
+    var i=0;
+    var timer;
+    function run(){
+        timer=setInterval(function(){
+            lis[i].removeAttribute("class");
+            num_list[i].firstElementChild.removeAttribute("class");
+            i++;
+            if(i>=lis.length){
+                i=0;
+            }
+            lis[i].setAttribute("class","active");
+            num_list[i].firstElementChild.setAttribute("class","active-num");
+        },2000);
+    }
+    run();
+
+    lun.onmouseover=function(){
+        clearInterval(timer);
+    };
+    lun.onmouseout=function(){
+        run();
+    };
+    for(var j=0;j<num_list.length;j++){
+        num_list[j].firstElementChild.setAttribute("num",j);
+        num_list[j].onmouseover=function(){
+            lis[i].removeAttribute("class");
+            num_list[i].firstElementChild.removeAttribute("class");
+            clearInterval(timer);
+          i=this.firstElementChild.getAttribute("num");
+          lis[i].setAttribute("class","active");
+            num_list[i].firstElementChild.setAttribute("class","active-num");
+        }
+    }
+</script>
+</body>
+</html>

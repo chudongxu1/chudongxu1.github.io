@@ -1,0 +1,158 @@
+*{margin: 0;padding: 0;font-family: Arial;}
+a{text-decoration: none;}
+li{list-style: none;}
+.clear{clear:both;}
+#header-bg{
+	width: 100%;
+	background:url(../images/header-bg.jpg);
+}
+#header{
+	width: 874px;
+	height: 233px;
+	margin: 0 auto;
+}
+.logo img{
+	padding-top: 48px;
+	float: left;
+}
+.logo h1{
+	color: #ffe7be;
+	padding-top: 65px;
+	margin-left: 65px;
+	
+}
+.logo p{
+	margin-left: 65px;
+	font-size:12px ;
+	color: #daab59;
+}
+.icon{
+	width: 200px;
+	height: 30px;
+	float: right;
+	margin-right: 42px;
+	margin-top: -50px;
+}
+.icon img{
+	width: 48px;
+	height: 30px;
+	border-right:1px solid #918174 ;
+	
+}
+.icon .map{
+	border-right: 0px;
+}
+.nav li a{
+	border-right:1px solid #918174;
+	float: left;
+	margin-top: 66px;
+	margin-left: 5px;
+	padding:5px 40px;
+	color: #ffe7be;
+}
+.nav .site{
+	border-right: 0px;
+	
+}
+.nav .contact{
+	color: #ffd267;
+}
+.nav li a:hover{
+	color: #ffd267;
+}
+#main-bg{
+	width: 100%;
+}
+#main{
+	width: 874px;
+	height: 662px;
+	margin: 0 auto;
+	background:url(../images/content-bg.jpg);
+}
+.main-right{
+	width: 566px;
+	height: 542px;
+	background: #fff;
+	border:1px #c1afa3 solid;
+	border-radius:8px 0 8px 0;
+	opacity: 0.8;
+	float: right;
+	margin-top: 32px;
+}
+.main-right h1{
+	margin-top: 31px;
+	margin-left: 43px;
+	color: #9f5827;
+}
+.main-right p{
+	margin-left: 40px;
+	width: 472px;
+	height: 36px;
+	font-size: 12px;
+	line-height: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.main-right label{
+	margin-left: 40px;
+	color: #9f5827;
+	float: left;
+	margin-top: 10px;
+}
+.main-right .li{
+	width: 175px;
+	height: 18px;
+	margin-left: 28px;
+	margin-top: 10px;
+	border:2px solid #9f5827;
+}
+.main-right .ze{
+	margin-left: 25px;
+	margin-top: 10px;
+	width: 175px;
+	height: 18px;
+	border:2px solid #9f5827;
+}
+.main-right .da{
+	width: 175px;
+	height: 18px;
+	margin-left: 14px;
+	margin-top: 10px;
+	border:2px solid #9f5827;
+}
+.main-right .ai{
+	margin-top: 10px;
+	border:2px solid #9f5827;
+	width: 381px;
+	height: 255px;
+	margin-left: 5px;
+}
+.main-right a{
+	float: right;
+	margin-right: 39px;
+	margin-top: 15px;
+	color: #9f5827;
+	border-bottom: 1px solid #9f5827;
+}
+#footer-bg{
+	width: 100%;
+	background:url(../images/footer-bg.gif);
+}
+#footer{
+	width: 1000px;
+	height: 95px;
+	margin: 0 auto;
+}
+.copy .Copyrights{
+	float: left;
+	font-size: 12px;
+	margin-top: 39px;
+}
+.copy .Popular{
+	float: right;
+	font-size: 12px;
+	margin-top: 39px;
+}.copy a{
+	color: #f8ab41;
+	border-bottom: 1px solid #f8ab41;
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main {
+	width:800px;
+	margin:10px auto;
+	}
+#left {
+	width:200px;
+	float:left;
+	border:1px solid #CCC;
+	}
+#main h3 {
+	height:25px;
+	color:#FFF;
+	font-weight:bold;
+	line-height:25px;
+	padding-left:5px;
+	}
+#main h3 img {
+	float:right;
+	margin:8px;
+	}
+#leftnews {
+	height:85px;
+	position:relative;
+	overflow:hidden;
+	padding:5px 0px 0px 15px;
+	}
+.news {
+	position:absolute;
+	}
+.news li {
+	line-height:21px;
+	}
+.news li a {
+	color:#0287ca;
+	}
+.news li a:hover {
+	text-decoration:underline;
+	}
+	
+/*----左下   产品分类----样式*/
+.mainlist {
+	padding-left:20px;
+	}
+.mainlist li {
+	background:url(../images/treeview-collapsed.gif) no-repeat;
+	padding-left:17px;
+	}
+.sublist li {
+	background:url(../images/treeview-item.gif) no-repeat;
+	padding-left:16px;
+	line-height:25px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

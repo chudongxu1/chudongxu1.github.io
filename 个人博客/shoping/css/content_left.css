@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content {
+	width:800px;
+	height:600px;
+	margin:10px auto;
+	border:1px solid #CCC;
+	}
+
+#content h3 {
+	height:25px;
+	color:#FFF;
+	font-weight:bold;
+	line-height:25px;
+	padding-left:5px;
+	}
+#content_left {
+	margin:8px;
+	width:380px;
+	overflow:hidden;
+	float:left;
+	}
+.jqzoom {
+	border:1px solid #CCC;
+    position:relative;
+	width:310px;
+	height:310px;
+	}
+#content_left span {
+	display:block;
+	padding:10px 0px 10px 110px;
+	}
+#content_left span a:hover { 
+	text-decoration:none;
+    }
+.piclist {
+	height:85px;
+	}
+.piclist li {
+	float:left;
+	width:85px;
+	height:85px;
+	border:1px solid#CCC;
+	margin-right:10px;
+	}
+.btn_menu {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	clear:both;
+	}
+.btn_menu li {
+	float:left;
+	width:80px;
+	height:25px;
+	border:1px solid #CCC;
+	line-height:25px;
+	text-align:center;
+	margin:15px 5px 0px 0px;
+	border-bottom:0px;
+	}
+.btn1 {
+	background:#3FC;
+	}
+.btn1_xi {
+	clear:both;
+	border:1px solid #ccc;
+	padding:3px;
+	}

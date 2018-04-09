@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件练习</title>
+	<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<div id="app">
+	<header>
+		<my-component></my-component>
+		<my-con></my-con>
+		<ul>
+			<my-ghs v-for="list in lists" :imgsrc="list.imgsrc" :f="list.f"></my-ghs>
+		</ul>
+	</header>
+	<section>
+		<fag v-for="fs in fsl" v-bind="fs"></fag>
+	</section>
+	<footer>
+	<hg></hg>
+	</footer>
+</div>
+	<script src="js/vue.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

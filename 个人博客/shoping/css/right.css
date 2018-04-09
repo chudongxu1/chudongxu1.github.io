@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+#right {
+	width:586px;
+	border:1px solid #CCC;
+	float:right;
+	}
+#banner {
+	width:586px;
+	height:150px;
+	overflow:hidden;
+	position:relative;
+	}
+.piclist {
+	position:absolute;
+	}
+.piclist li {
+	height:150px;
+	}
+.picnum {
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	}
+.picnum li {
+	float:left;
+	width:15px;
+	height:15px;
+	text-align:center;
+	line-height:15px;
+	border:1px solid #ff6600;
+	margin-left:5px;
+	color:#ff6600;
+	background:#fff;
+	font-weight:bold;
+	}
+	
+.picnum .selected {
+	background:#ff6600;
+	color:#fff;
+	}
+/*新款上市*/	
+#main h3 {
+	margin-top:12px;
+	}
+#main h3 .picleft {
+	margin:5px 5px 0px 0px;
+	}	
+#main h3 .picright {
+	margin:5px 0px 0px 0px;
+	}	
+#bottom {
+	width:586px;
+	height:200px;
+	overflow:hidden;
+	position:relative;
+	}
+.bottomlist {
+	width:3000px;
+	position:absolute;
+	}
+.bottomlist li {
+	float:left;
+	margin:10px;
+	}
+.bottomlist li img {
+	width:124px;
+	height:124px;
+	border:0px;
+	}	
+.bottomlist li span {
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	margin-top:5px;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

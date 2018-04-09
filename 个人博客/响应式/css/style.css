@@ -1,0 +1,83 @@
+.navbar-default{
+    background-color: #A4DE54;
+}
+.navbar-nav{
+    width: 100%;
+}
+.nav>li>a{
+    padding: 15px 48px;
+}
+.navbar-default .navbar-nav>li>a{
+     color:#ffffff;
+ }
+.navbar-default .navbar-nav>li:nth-of-type(1)>a:nth-of-type(1){
+    color:#000000;
+}
+.main .img1{
+    width: 100%;
+}
+.main .img2{
+    width: 40%;
+}
+.main .one .col-md-3{
+    margin-top:20px;
+}
+.main .one .col-md-3 .cha{
+    font-weight: bold;
+    font-size:20px;
+}
+.main .one .col-md-3 .cha img{
+    vertical-align: top;
+    margin-right: 6px;
+}
+.main .one .col-md-3 .more{
+    text-align: center;
+}
+.main .one .col-md-3 .more a{
+    color:#7CCE09;
+    text-decoration: underline;
+}
+.main .two{
+    margin-top:30px;
+    background-color: #f6f6f6;
+}
+.main .two h2{
+    font-size:26px;
+    text-transform: uppercase;
+    text-align:center;
+    margin-bottom:20px;
+}
+.main .two .ppp{
+    font-size:18px;
+    text-align: center;
+    line-height:30px;
+}
+.main .pic img{
+    width: 100%;
+    margin-bottom:20px;
+}
+.main .xiao h3{
+    text-align:center;
+}
+.main .xiao ul li{
+    float:left;
+    list-style: none;
+    margin-top:20px;
+}
+.main .xiao ul li img{
+    float:left;
+    margin-right:20px;
+    width: 20%;
+}
+.main .xiao ul li a{
+    color:#7CCE09
+}
+.footer{
+    width: 100%;
+    background-color: #000;
+}
+.footer p{
+    line-height:50px;
+    text-align:center;
+    color:#ffffff;
+}

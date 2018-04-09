@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+.clear{ 
+    clear:both;
+	}
+#content_right {
+	width:370px;
+	float:left;
+	margin:10px;
+	}
+.color_change li {
+	width:26px;
+	height:26px;
+	float:left;
+	margin-right:10px;
+	border:1px solid #ccc;
+	}
+
+.size {
+	clear:both;
+	padding-top:20px;
+	}
+.size li {
+	float:left;
+	width:20px;
+	height:20px;
+	border:1px solid;
+	line-height:20px;
+	text-align:center;
+	margin-right:10px;
+	}
+
+.startlist {
+	width:80px;
+	height:16px;
+	margin:10px 0;
+	position:relative;
+	background:url(../images/star-matrix.gif) no-repeat 0 0;
+	}
+.startlist li {
+	float:left;
+	width:16px;
+	height:16px;
+	}
+.startlist li.one:hover {
+	background-position:0 -96px;
+	}
+.startlist li.two:hover {
+	background-position:0 -112px;
+	}
+.startlist li.three:hover {
+	background-position:0 -128px;
+	}
+.startlist li.four:hover {
+	background-position:0 -144px;
+	}
+.startlist li.five:hover {
+	background-position:0 -160px;
+	}
